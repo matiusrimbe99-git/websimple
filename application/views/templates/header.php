@@ -6,8 +6,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- General CSS Files -->
+    <link rel="shortcut icon" href="<?= base_url('assets/img/favicon.png') ?>" />
+    <link rel="stylesheet" href="<?= base_url('assets/modules/bootstrap/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/modules/fontawesome/css/all.min.css') ?>">
+
+    <!-- CSS Libraries -->
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="<?= base_url('assets/css/components.css') ?>">
+
+    <!-- Start GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94034622-3');
+    </script>
+    <!-- /END GA -->
 
     <title><?= $title ?></title>
 </head>
@@ -23,6 +44,7 @@
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="<?= base_url() ?>">Home</a>
                     <a class="nav-link" href="<?= base_url('mahasiswa') ?>">Mahasiswa</a>
+                    <a class="nav-link" href="<?= base_url('peoples') ?>">Peoples</a>
                     <a class="nav-link" href="<?= base_url('about') ?>">About</a>
                 </div>
             </div>
